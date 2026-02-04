@@ -1,0 +1,58 @@
+{
+  "name": "SASA X MD",
+  "description": "Javascript WhatsApp bot made by Mr.Sasanka Chamuth",
+  "logo": "https://i.ibb.co/Q7Pfx5N1/d2b62c23e158.jpg",
+  "keywords": ["SASA X MD","SASA X MD"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Must Start with '𝐒𝐀𝐒𝐀 𝐗 𝐌𝐃 𝐕1&'",
+      "required": true,
+      "value": ""
+    },
+      "BOT_NAME": {
+        "description": "𝐒𝐀𝐒𝐀 𝐗 𝐌𝐃",
+        "required": true,
+        "value": "SASA X MD"      
+    },  
+    "MODE": {
+      "description": "Set private/public/inbox/groups",
+      "required": false,
+      "value": "public"
+     },
+   
+    "PREFIX": {
+      "description": "Your Bot Prefix (default: .) You can put your own custom prefix",
+      "required": true,
+      "value": "."
+    },
+    
+    "OWNER_NAME": {
+      "description": "SASANKA CHAMUTH",
+      "required": true,
+      "value": "Mr.Sasanka Chamuth"
+    },
+    "OWNER_NUMBER": {
+      "description": "Put only one Owner Number Here",
+      "required": true,
+      "value": "94784167385"
+    },
+    
+    "PRESENCE": {
+      "description": "Put online/typing/recording/unavailable",
+      "required": true,
+      "value": "online"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
